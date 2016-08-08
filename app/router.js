@@ -13,7 +13,7 @@ Router.map(function() {
 
   this.route('posts', function() {
     this.route('new');
-    this.route('show/:post_id');
+    this.route('show', { path: 'show/:post_id' });
   });
 });
 
