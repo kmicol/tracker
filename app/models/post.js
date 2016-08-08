@@ -2,7 +2,7 @@ import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
 
 export default Model.extend({
-  title: attr(),
-  subtitle: attr(),
-  author: attr(),
+  title: attr('string'),
+  subtitle: attr('string'),
+  author: attr('string'),
 });
