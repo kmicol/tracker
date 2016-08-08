@@ -1,14 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  actions: {
+    post() {
+      let post = this.get('model');
 
-model: function (model) {
-	let post = this.get('model');
-
-	post.save().then(post) => {
-    this.transitionToRoute('posts.show', post);
-	}
-}
-
-
+      post.save().then((post) => {
+        this.transitionToRoute('posts.show', post);
+      });
+    }
+  }
 });
