@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
- model() {
+export default Ember.Route.extend({
+
+	model() {
   	return this.store.createRecord('post');
   },
 
-export default Ember.Route.extend({
+  });
 
