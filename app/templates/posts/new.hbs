@@ -1,9 +1,13 @@
 
-<div class="submit-post">
-  <label for="post"><h2>Create New Post:</h2></label>
-  <textarea class="form-control" rows="5" id="post"></textarea>
-</div>
-
- <button id="submit-post" {{action "submitPost"}}>
-    Submit Post ({{post}})
-  </button> 
+<form id="NewPost">
+    <p>
+      {{input value=newPost.title placeholder="Title"}}
+      {{input value=newPost.author placeholder="Author"}}
+    </p>
+    <p>
+      {{textarea value=newPost.text placeholder="Content" rows="10" cols="140"}}
+    </p>
+<p>
+ <button{{action "post"}}>Submit Post</button> 
+</p>
+ </form>
