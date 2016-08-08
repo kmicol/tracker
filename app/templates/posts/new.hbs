@@ -1,1 +1,9 @@
-{{outlet}}
+
+<div class="submit-post">
+  <label for="post"><h2>Create New Post:</h2></label>
+  <textarea class="form-control" rows="5" id="post"></textarea>
+</div>
+
+ <button id="submit-post" {{action "submitPost"}}>
+    Submit Post ({{post}})
+  </button> 
