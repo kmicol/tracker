@@ -6,9 +6,6 @@ export default Model.extend({
   subtitle: attr('string'),
   author: attr('string'),
  
-  model() {
-  	return this.store.createRecord('post');
-  }
 });
 
 
