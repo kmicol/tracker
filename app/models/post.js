@@ -5,4 +5,11 @@ export default Model.extend({
   title: attr('string'),
   subtitle: attr('string'),
   author: attr('string'),
+ 
 });
+
+
+
+
+
+

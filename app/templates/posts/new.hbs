@@ -1,0 +1,13 @@
+
+<form>
+    <p>
+      {{input value=model.title placeholder="Title"}}
+      {{input value=model.author placeholder="Author"}}
+    </p>
+    <p>
+      {{textarea value=model.text placeholder="Content" rows="10" cols="140"}}
+    </p>
+<p>
+ <button{{action "post"}}>Submit Post</button> 
+</p>
+ </form>

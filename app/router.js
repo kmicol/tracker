@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('sample');
+
+  this.route('posts', function() {
+    this.route('new');
+    this.route('show', { path: 'show/:post_id' });
+  });
 });
 
 export default Router;
